@@ -1,5 +1,7 @@
 import Footer from '@components/footer/footer';
 import Header from '@components/header/header';
+import MouseFollower from '@components/mouse-follower/mouse-follower';
+import gsap from 'gsap';
 import { useEffect } from 'react';
 
 export default function MainLayout({ children }) {
@@ -16,6 +18,9 @@ export default function MainLayout({ children }) {
          );
 
       if (isMobile || isTablet) return;
+      
+      MouseFollower.registerGSAP(gsap);
+      const cursor = new MouseFollower({});
       return () => {
          cursor.destroy();
       };
