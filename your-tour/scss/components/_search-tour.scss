@@ -1,0 +1,28 @@
+.search-tour__container{
+    .container-full{
+        .search-bar{
+            width: 50%;
+            height: 44px;
+            border: 0;
+            line-height: 44px;
+            color: #333;
+            font-size: 14px;
+            padding: 0px 10px;
+            -webkit-box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 40%);
+            box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 40%);
+            border: 1px solid #c0c0c0;
+            margin: 80px auto;
+        }
+        .icon-search{
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            margin: 88px auto;
+            right: 28%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

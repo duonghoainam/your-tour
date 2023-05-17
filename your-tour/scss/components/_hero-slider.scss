@@ -1,0 +1,236 @@
+.hero-slider {
+   width: 100%;
+   height: 100%;
+   position: relative;
+
+   &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+            2.92deg,
+            rgba(29, 34, 58, 0.5) -4.66%,
+            rgba(29, 34, 58, 0) 22.49%
+         ),
+         linear-gradient(180deg, rgba(29, 34, 58, 0.5) 0%, rgba(29, 34, 58, 0) 19.11%);
+      z-index: 2;
+   }
+
+   &__container {
+      width: 100%;
+      height: 900px;
+      max-height: calc(100vh - 120px);
+      min-height: 420px;
+
+      position: relative;
+
+      img {
+         object-fit: cover;
+      }
+      .word {
+         // opacity: 0;
+         animation: up 1.5s;
+         animation-delay: 0.5s;
+      }
+
+      .hex {
+         width: fit-content;
+         position: absolute;
+
+         &-1 {
+            left: 535px;
+            top: 180px;
+         }
+         &-2 {
+            left: 620px;
+            top: 128px;
+         }
+         &-3 {
+            left: 460px;
+            top: 220px;
+         }
+         &-4 {
+            right: 305px;
+            top: 433px;
+         }
+         &-5 {
+            right: 253px;
+            top: 488px;
+         }
+      }
+   }
+
+   &__navigation {
+      width: 100%;
+      max-width: 1800px;
+      padding: 0 260px;
+
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__pagination {
+      width: fit-content !important;
+      background-color: $color--blue-grey;
+      border: 2px solid rgba($color: #fff, $alpha: 0.3);
+      border-radius: 75px;
+      z-index: 1;
+      padding: 16px;
+      display: flex;
+      gap: 18px;
+      height: 56px;
+      align-items: center;
+
+      &.swiper-pagination-horizontal {
+         width: fit-content;
+         margin-bottom: 40px;
+      }
+      .swiper-pagination-bullet {
+         color: #ffffff;
+         opacity: 0.5;
+         width: unset;
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 24px;
+         margin-right: 18px;
+         display: block;
+         height: 24px;
+         margin: 0 !important;
+      }
+      .swiper-pagination-bullet + .swiper-pagination-bullet {
+         margin-left: 18px;
+      }
+      .swiper-pagination-bullet {
+         background: unset;
+      }
+      .swiper-pagination-bullet-active {
+         background: unset;
+         opacity: 1;
+      }
+   }
+
+   &__content {
+      position: absolute;
+      bottom: 60px;
+      // left: 260px;
+      width: 100%;
+      max-width: 1800px;
+      padding: 0 260px;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      color: #fff;
+
+      .logo {
+         margin-top: 32px;
+      }
+      .subtitle {
+         margin-top: 16px;
+         text-transform: uppercase;
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 36px;
+      }
+   }
+
+   &__hexagon-group {
+      position: absolute;
+      left: 422px;
+      bottom: 370px;
+      z-index: 2;
+   }
+
+   &__hexagon-group2 {
+      position: absolute;
+      bottom: 150px;
+      right: 254px;
+      z-index: 2;
+   }
+
+   &__hexagon-container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      pointer-events: none;
+      max-width: 100vw;
+      overflow: hidden;
+   }
+   &__hexagon__inner {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      max-width: 1920px;
+      padding: 0 260px;
+      margin: 0 auto;
+      z-index: 2;
+   }
+}
+
+#next-btn {
+   @include hexagon-button(120px);
+   @include flex-center;
+   transition: transform 0.4s ease;
+   cursor: pointer;
+
+   background-color: $color--blue-grey;
+   color: #fff;
+
+   &:hover {
+      transform: rotate(10deg);
+   }
+}
+
+#prev-btn {
+   @include hexagon-button(120px);
+   @include flex-center;
+   transition: transform 0.4s ease;
+   cursor: pointer;
+
+   background-color: #fff;
+   color: $color--blue-grey;
+
+   &:hover {
+      transform: rotate(-10deg);
+   }
+
+   & .icon {
+      transform: rotate(180deg) translateY(50%);
+   }
+}
+
+.blur-hexagons {
+   &--left {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      div {
+         position: relative;
+
+         &:nth-child(1) {
+            left: 620px;
+            top: 256px;
+         }
+         &:nth-child(2) {
+            left: 650px;
+            top: 144px;
+         }
+         &:nth-child(3) {
+            left: 422px;
+            top: 152px;
+         }
+      }
+   }
+}

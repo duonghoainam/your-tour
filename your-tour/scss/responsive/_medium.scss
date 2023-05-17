@@ -1,0 +1,343 @@
+/**
+* Medium devices (tablets, less than 992px)
+*/
+.nav-link {
+   margin: 0 25px;
+}
+
+.hero-slider {
+   &__navigation {
+      padding: 0 20px;
+   }
+   &__content {
+      padding: 0 20px;
+   }
+}
+
+.business-area {
+   // &__images {
+
+   // }
+   // &__image {
+   //    &:nth-child(3) {
+   //       margin-top: 0px;
+   //    }
+   //    &:nth-child(4) {
+   //       margin-top: 300px;
+   //    }
+   // }
+   &__images {
+      margin-top: 0px;
+      &--grid {
+         gap: 15px;
+      }
+   }
+   &__image {
+      &-content {
+         padding: 24px;
+      }
+      &:nth-child(2) {
+         margin-top: 70px;
+      }
+      &:nth-child(3) {
+         margin-top: 0px;
+      }
+      &:nth-child(4) {
+         margin-top: 70px;
+      }
+
+      .title {
+         font-size: 24px;
+         line-height: 36px;
+      }
+   }
+   &__container {
+      max-width: 100vw;
+      overflow: hidden;
+      padding-top: 80px;
+      padding-bottom: 120px;
+      .container-full {
+         .more-link-wrapper {
+            // display: flex;
+         }
+      }
+   }
+   &__content {
+      padding-left: 20px;
+
+      .section-subtitle {
+         font-size: 80px;
+         min-height: 180px;
+      }
+   }
+}
+
+.contact-us-container {
+   padding: 0 20px;
+}
+.footer-content-container {
+   padding: 77px 20px 44px;
+   .footer-content {
+      padding-right: 110px;
+   }
+}
+
+.Hiven-info {
+   width: 243px;
+   height: 192px;
+}
+
+.contact {
+   margin-left: 88px;
+}
+
+// investment region
+
+.investment-region {
+   padding-left: 20px;
+   padding-top: 80px;
+   padding-bottom: 80px;
+
+   &__title {
+      font-weight: 300;
+      font-size: 126px;
+      line-height: 144px;
+      margin-bottom: 80px;
+   }
+
+   &__content {
+      max-height: unset;
+      flex-direction: column;
+      height: max-content !important;
+
+      &::before {
+         content: unset;
+      }
+
+      .geography-map {
+         padding-top: 209px;
+
+         &__container {
+            width: 100%;
+            min-height: calc(100vw * 85 / 100);
+         }
+
+         &__card.active {
+            left: unset !important;
+            bottom: unset !important;
+            right: -380px;
+            top: -209px;
+         }
+
+         &__region {
+            &--node {
+               width: 16px;
+               height: 16px;
+               &::before {
+                  width: 12px;
+                  height: 12px;
+               }
+            }
+
+            &.active {
+               .geography-map__region--node::before {
+                  width: 8px;
+                  height: 8px;
+               }
+            }
+         }
+      }
+   }
+
+   &__control {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      &--title {
+         font-weight: 700;
+         font-size: 80px;
+         line-height: 100%;
+      }
+   }
+
+   &__xsmall {
+      padding: 0px 20px;
+
+      .investment-region__control--item {
+         padding: 16px;
+         flex-direction: column;
+         align-items: baseline;
+         gap: 8px;
+         .head {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            svg {
+               transform: rotate(90deg);
+            }
+         }
+         .body {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+         }
+
+         .region-info-small {
+            .body {
+               font-weight: 600;
+               font-size: 16px;
+               line-height: 24px;
+               &__no {
+                  font-weight: 400;
+                  font-size: 93.2579px;
+                  line-height: 100%;
+               }
+            }
+            .foot {
+               display: grid;
+               margin-top: 8px;
+               &__content {
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 27px;
+                  white-space: nowrap;
+                  span {
+                     color: $color--pink;
+                  }
+               }
+               &__addr {
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 160%;
+                  letter-spacing: -0.01em;
+               }
+            }
+         }
+
+         &.active {
+            .head svg {
+               transform: rotate(-90deg);
+            }
+            .body {
+               max-height: 232px;
+            }
+         }
+      }
+   }
+}
+
+.geography-map {
+   margin-left: 0;
+   width: 100%;
+   // padding-top: 209px;
+}
+// .cards-grid {
+//    grid-template-columns: 100%;
+//    justify-items: center;
+//    align-items: center;
+//    padding-top: 80px;
+
+//    & > a:nth-child(2n) {
+//       margin-top: 0px !important;
+//    }
+// }
+
+.card {
+   .view-more {
+      opacity: 1;
+   }
+
+   > a:nth-child(2n) {
+      margin-top: 0px;
+   }
+}
+
+.about-us-banner__inner {
+   padding: 0 0;
+}
+.about-us-content__inner {
+   padding: 0 0px;
+   .title {
+      padding-left: 0;
+   }
+}
+.about-us-container-full {
+   padding: 102px 20px 62px;
+   .about-us-group-content{
+      .web-intro {
+         justify-content: space-between;
+      }
+   }
+   .web-intro {
+      justify-content: space-between;
+      .intro {
+         max-width: 352px;
+      }
+   }
+   .about-us-group-content-final {
+      .KKFung {
+         margin-left: 0px;
+      }
+      .more-link {
+         margin-left: 0px;
+      }
+      .web-intro {
+         justify-content: space-between;
+         .intro {
+            max-width: unset;
+         }
+      }
+   }
+}
+.mf-cursor {
+   display: none;
+}
+.container-full {
+   padding: 0px 20px;
+}
+
+.contact-info {
+   &__inner {
+      .hexagon-image__container {
+         margin-left: 0;
+      }
+   }
+}
+.contact-form {
+   &__container {
+      margin-top: 40px;
+   }
+   &__inner {
+      padding: 0;
+   }
+}
+
+.news-banner {
+   &__hexagon-group {
+      bottom: 123px;
+      left: 21px;
+   }
+   &__hexagon-group2 {
+      bottom: 108px;
+      right: 20px;
+   }
+}
+.about-us-banner__container {
+   .about-us-banner {
+      &__hexagon-group {
+         bottom: 123px;
+         left: 21px;
+         transform: scale(0.8);
+      }
+      &__hexagon-group2 {
+         bottom: 108px;
+         right: 20px;
+         transform: scale(0.8);
+      }
+   }
+}

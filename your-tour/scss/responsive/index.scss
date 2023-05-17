@@ -62,3 +62,11 @@ $res_xl: "screen and (max-width: 1919.98px)";
 @include media_xs {
    @import "extra-small";
 }
+
+@media screen and (width: 1440px) {
+   @import "1440-only";
+}
+
+@media screen and (width: 1920px) {
+   @import "1920-only";
+}

@@ -1,0 +1,39 @@
+.booking-form{
+    padding-top: 20px;
+    padding-bottom: 110px;
+    background-color: #fff;
+    .booking-container-full{
+        flex-direction: unset;
+        .bookDetailsInfo{
+            box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 40%);
+            .booking-detail-image{
+                display: block;
+                width: 100%;
+                margin: auto;
+            }
+            .infoArea{
+                padding: 70px;
+                color: #181760;
+                h1{
+                    margin-bottom: 20px;
+                    line-height: 1.15;
+                }
+                ul{
+                    list-style-type: none;
+                    margin-bottom: 20px;
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.term-and-condition-box{
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    overflow-x: unset;
+    line-height: 1.15;
+    color: #181760;
+}

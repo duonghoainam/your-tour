@@ -1,0 +1,107 @@
+/**
+* Extra small devices (portrait phones, less than 576px)
+*/
+
+// Home
+.hero-slider {
+   &__navigation {
+      bottom: -35px;
+
+      #next-btn,
+      #prev-btn {
+         @include hexagon-button(70px);
+      }
+
+      .icon {
+         //  width: 4px;
+         //  height:
+      }
+
+      #prev-btn {
+         & .icon {
+            transform: rotate(180deg) translateY(50%);
+         }
+      }
+   }
+   &__content {
+      .subtitle {
+         max-width: 250px;
+      }
+      .logo {
+         margin-top: 16px;
+      }
+   }
+}
+
+.mission-value {
+   &__content {
+      .section-subtitle {
+         font-size: 56px;
+      }
+   }
+}
+
+.about-us-banner__container {
+   padding-bottom: 34px;
+   display: flex;
+   align-items: flex-end;
+   .about-us-banner__title {
+      h2 {
+         font-weight: 700;
+         font-size: 56px;
+         line-height: 61px;
+      }
+   }
+}
+
+.about-us-content__container {
+   .container-full {
+      // padding: 5px;
+   }
+}
+
+.about-us-container-full {
+}
+
+.investment-region {
+   &__content {
+      .geography-map__container {
+         min-height: 450px;
+      }
+   }
+}
+.geography-map__region--polyline {
+   // display: none;
+}
+
+.geography-map {
+   &__card {
+      .body,
+      .linebreak,
+      .foot {
+         display: none;
+      }
+   }
+}
+.icon-scroll-to-top {
+   bottom: 60px;
+}
+.footer-content-container .footer-content .link-group {
+   flex-wrap: wrap;
+   gap: 12px;
+   .contact {
+      margin-left: 0;
+   }
+   .quick-link {
+      margin-right: 40px;
+   }
+}
+
+.contact-info {
+   &__details {
+      & > div:not(:nth-child(1)),
+      & > div:not(:nth-child(2)) {
+         margin-top: 30px;
+      }
+   }
+}

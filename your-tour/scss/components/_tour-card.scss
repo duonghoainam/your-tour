@@ -1,0 +1,93 @@
+.tour-card{
+    display: flex;
+    .card-header{
+        padding-bottom: 40px;
+    }
+    .card-body{
+        .body-content.card-description{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* number of lines to show */
+                    // line-clamp: 2; 
+            -webkit-box-orient: vertical;
+        }
+    }
+    .view-more{
+        opacity: 1;
+    }
+}
+.tour{
+    &-banner__container{
+      background-image: url(../../assets/images/business-area-3.png);
+    }
+    &-row{
+        display: flex;
+        div{
+            width: 50%;
+            margin: 0;
+        }
+        &.members-of-tour-group{
+            h2{
+                color: #181760;
+            }
+            .button-counter-group{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                gap: 20px;
+
+                .button-counter{
+                    width: 24px;
+                    height: 24px;
+                    background: #38c3c5;
+                    border: none;
+                    color: #181760;
+                    border-radius: 5px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &-bill-table{
+        padding: 22px 100px 22px;
+        background: lightblue;
+        .row{
+            display: flex;
+            .tour-table-text{
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1;
+                letter-spacing: -0.003em;
+                overflow-wrap: break-word;
+                color: #181760;
+                font-size: 18px;
+                line-height: 160%;
+                letter-spacing: 0.01em;
+                width: 20%;
+            }
+            .tour-table-button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+            }
+            button{
+                padding: 0 8px;
+                color: #fff;
+                background: #4a86e8;
+                min-width: 107px;
+                min-height: 40px;
+                border-radius: 4px;
+                text-transform: uppercase;
+                text-align: center;
+                border: none;
+                &:hover{
+                    cursor: pointer;
+                    background: #73c9f0;
+                }
+            }
+        }
+       
+    }
+}
