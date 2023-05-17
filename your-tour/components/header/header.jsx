@@ -7,6 +7,13 @@ import IconFacebook from '@components/icons/ic-fb';
 import IconTwitter from '@components/icons/ic-twitter';
 import IconLinkedIn from '@components/icons/ic-linkedin';
 import { useMainContext } from '@components/common/main-context/main-context';
+import IconFacebook from '@components/icons/ic-fb';
+import IconLinkedIn from '@components/icons/ic-linkedin';
+import IconTwitter from '@components/icons/ic-twitter';
+import IconLogo from '@components/icons/logo';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 
 export default function Header() {
    const [activeMobileMenu, setActiveMobileMenu] = useState(false);
