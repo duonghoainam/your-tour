@@ -1,0 +1,62 @@
+[
+    {
+     "name": "PHU QUOC TOURISM - SAO BEACH - SUNSET TOWN - KISS THE STARS SHOW",
+     "thumbnail": "https://media.travel.com.vn/destination/tf_230111042325_545330.jpg",
+     "time": "3 days 2 nights",
+     "vehicle": "Vietnam Airlines",
+     "departurePlace": "Ho Chi Minh City",
+     "destination": "Phu Quoc",
+     "content": [],
+     "id": "1"
+    },
+    {
+     "name": "CAMBODIA - LAOS TRAVEL [PAKSE – STUNGTRENG – KRATIE]",
+     "thumbnail": "https://media.travel.com.vn/destination/tf_220321040253_427867.jpg",
+     "time": "4 days 3 nights",
+     "vehicle": "Return by Bus",
+     "departurePlace": "Ho Chi Minh City",
+     "destination": "Cambodia | Laos",
+     "content": [],
+     "id": "2"
+    },
+    {
+     "name": "THAILAND TRAVEL [BANGKOK - PATTAYA] (CORAL ATOLL - NONG NOOCH GARDEN - BAIYOKE SKY)",
+     "thumbnail": "https://media.travel.com.vn/destination/tf_220826052337_808950.jpg",
+     "time": "5 days 4 nights",
+     "vehicle": "Vietnam National Airlines",
+     "departurePlace": "Ho Chi Minh City",
+     "destination": "Thailand",
+     "content": [],
+     "id": "3"
+    },
+    {
+     "name": "EUROPE TRAVEL [FRANCE - SWITZERLAND - ITALY]",
+     "thumbnail": "https://media.travel.com.vn/destination/tf_220427104341_021872.jpg",
+     "time": "11 days 10 nights",
+     "vehicle": "Vietnam National Airlines",
+     "departurePlace": "Ho Chi Minh City",
+     "destination": "Europe",
+     "content": [],
+     "id": "4"
+    },
+    {
+     "name": "PHONG NHA CAVE - HUE - DA NANG - HOI AN - BA NA - GOLDEN BRIDGE",
+     "thumbnail": "https://media.travel.com.vn/destination/tf_220222114340_614496.jpg",
+     "time": "5 days 4 nights",
+     "vehicle": "Vietnam Airlines",
+     "departurePlace": "Ho Chi Minh City",
+     "destination": "Hue - Hoi An - Da Nang",
+     "content": [],
+     "id": "5"
+    },
+    {
+     "name": "HANOI - SAPA - FANSIPAN - HA LONG",
+     "thumbnail": "https://media.travel.com.vn/destination/tf_221207045649_874164.jpg",
+     "time": "5 days 4 nights",
+     "vehicle": "Vietnam Airlines",
+     "departurePlace": "Ho Chi Minh City",
+     "destination": "Hanoi - Ha Long - Sapa",
+     "content": [],
+     "id": "6"
+    }
+   ]

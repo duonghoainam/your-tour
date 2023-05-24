@@ -7,6 +7,8 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 
 const News = () => {
+   
+
    useEffect(() => {
       const text = new AnimatedAppearText([['Latest&nbsp']]);
    }, []);

@@ -9,22 +9,9 @@ import { useEffect, useState } from 'react';
 import SearchTour from '@components/search-tour/search-tour';
 import axios from 'axios';
 import { useRouter } from 'next/router'
+import mockApiIoInstance from 'config/mockapi-io';
 
 const Tours = () => {
-   // useEffect(() => {
-      
-   //    async function fetchData() {
-   //       const listTourApi = await axios.get(`https://travel-website-backend.up.railway.app/api/tour-packages`, "", {
-   //          baseURL: 'https://travel-website-backend.up.railway.app/api',
-   //       });
-   //       console.log("ListTour", listTourApi)
-   //       if (listTourApi.data?.tourPackages?.length > 0) 
-   //          setListTour(listTourApi.data.tourPackages)
-   //     }
-   //     fetchData();
-
-      
-   // }, []);
    const router = useRouter();
 
    const [listTour, setListTour] = useState([]);
@@ -36,10 +23,14 @@ const Tours = () => {
 
       if(router.query.searchInput) setListTourSearch(router.query.searchInput)
       async function fetchData() {
-         const listTourApi = await axios.get(`https://travel-website-backend.up.railway.app/api/tour-packages?searchInput=${listTourSearch}`,{
-         });
-         console.log("ListTour", listTourApi)
-            setListTour(listTourApi.data.tourPackages)
+         try {
+            const res = await mockApiIoInstance.get(`/tours`);
+            const data = res.data;
+            //console.log('club', data)
+            setListTour(data)
+          } catch (error) {
+            console.log(error);
+          }
        }
        fetchData();      
    }, [listTourSearch]);
@@ -100,60 +91,12 @@ const Tours = () => {
                      <SearchTour setListTourSearch={setListTourSearch}/>
 
                      <div className="tour-grid">
-                        {/* <NewsCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        />
-                        <NewsCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        />
-                        <NewsCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        />
-                        <NewsCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        /> */}
-                         {/* <TourCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        />
-                         <TourCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        />
-                         <TourCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        />
-                         <TourCard
-                           url="/tour/1"
-                           banner={
-                              'https://www.saigontourist.net/uploads/destination/NuocNgoai/Nam-Phi/Boulders-Beach_548075986.jpg'
-                           }
-                        /> */}
                         {listTour.length > 0 &&
                            listTour.map((item, idx) => (
                               // <TourCard key={idx} data={item.attributes} />
                               <TourCard
                               key={idx}
-                              url={`/tour/${item._id}`}
+                              url={`/tour/${item.id}`}
                               banner={item.thumbnail}
                               thumbnail={item.thumbnail}
                               title={item.name}

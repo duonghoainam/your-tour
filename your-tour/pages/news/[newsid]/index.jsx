@@ -100,7 +100,7 @@ const NewsDetail = () => {
             </p>
 
             <ScrollToTop></ScrollToTop>
-            <h2 style={{margin:20}}>more blog</h2>
+            <h2 style={{margin:20}}>More blogs</h2>
             <SomeTour/>
     </>
    );
