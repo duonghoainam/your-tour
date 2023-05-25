@@ -2,22 +2,23 @@
     .container-full{
         .search-bar{
             width: 50%;
-            height: 44px;
+            height: auto;
             border: 0;
-            line-height: 44px;
+            line-height: 32px;
             color: #333;
-            font-size: 14px;
-            padding: 0px 10px;
+            font-size: 16px;
             -webkit-box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 40%);
             box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 40%);
             border: 1px solid #c0c0c0;
             margin: 80px auto;
+            border-radius: 50px;
+            padding: 15px 20px;
         }
         .icon-search{
             width: 28px;
             height: 28px;
             position: absolute;
-            margin: 88px auto;
+            margin: 98px auto;
             right: 28%;
             &:hover{
                 cursor: pointer;

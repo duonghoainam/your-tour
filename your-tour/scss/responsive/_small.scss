@@ -451,12 +451,14 @@
    padding: 0 0px;
    // padding-bottom: 40px;
    .news__title {
-      margin-top: -61px;
+      margin-top: -10px;
+
       .wordContainer {
          .word {
             font-weight: 400;
             font-size: 84px;
-            line-height: 178px;
+            line-height: 100px;
+            z-index: 100;
          }
       }
    }
