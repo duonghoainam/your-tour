@@ -71,6 +71,9 @@
                 justify-content: center;
                 align-items: center;
                 width: 20%;
+                background-color: #fd5056;
+                font-weight: bold;
+                font-size: 16px;
             }
             button{
                 padding: 0 8px;
@@ -84,7 +87,7 @@
                 border: none;
                 &:hover{
                     cursor: pointer;
-                    background: #73c9f0;
+                    background: #38c3c5;
                 }
             }
         }

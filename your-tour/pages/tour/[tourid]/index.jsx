@@ -21,15 +21,23 @@ const TourDetail = () => {
 
    useEffect(() => { 
       async function fetchData() {
-         const res = await mockApiIoInstance.get(`/tours/${tourid}`,{
-         });
-         const data = res.data
-         console.log("Tour", data)
-         setTour(data)
-         const banner = document.querySelector(".tour-banner__container")
-         banner.style.backgroundImage = `url(${data.banner})`
+         try {
+            const res = await mockApiIoInstance.get(`/tours/${tourid}`);
+            const data = res.data
+            // console.log("Tour", data)
+            setTour(data)
+            const banner = document.querySelector(".tour-banner__container")
+            banner.style.backgroundImage = `url(${data.banner})`
+         } catch (error) {
+            console.log("ERROR", tourid)
+            if (error.response.data === "Something went wrong while parsing response JSON" && !tourid) {
+               router.push('/tour');
+            }
+         }
        }
-       fetchData();      
+       if (tourid) {
+         fetchData();      
+       }
    }, [tourid]);
    return (
     <>
