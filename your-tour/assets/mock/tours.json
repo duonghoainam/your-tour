@@ -1,7 +1,9 @@
 [
     {
      "name": "PHU QUOC TOURISM - SAO BEACH - SUNSET TOWN - KISS THE STARS SHOW",
+     "description": "Phu Quoc's gleaming white sand beaches have earned it the nickname \"Pearl Island\", but the island's environmental conservation efforts and cultural heritage deserve as much attention as its picturesque sand and surf.",
      "thumbnail": "https://media.travel.com.vn/destination/tf_230111042325_545330.jpg",
+     "banner": "https://vietnamdiscovery.com/wp-content/uploads/2019/09/Phu-Quoc-island.jpg",
      "time": "3 days 2 nights",
      "vehicle": "Vietnam Airlines",
      "departurePlace": "Ho Chi Minh City",
@@ -11,7 +13,9 @@
     },
     {
      "name": "CAMBODIA - LAOS TRAVEL [PAKSE – STUNGTRENG – KRATIE]",
+     "description": "Lao-Thai culture is like a sweet flow from generation to generation, molding the soul, essence and culture of Lao-Thai people.",
      "thumbnail": "https://media.travel.com.vn/destination/tf_220321040253_427867.jpg",
+     "banner": "https://www.travelmarvel.com.au/-/media/travelmarvel-responsive-website/asia/hero-panel-12-5/cambodia-12-5/hc-t-as-cambodia-angkor-wat-59225170-s-12-5.jpg",
      "time": "4 days 3 nights",
      "vehicle": "Return by Bus",
      "departurePlace": "Ho Chi Minh City",
@@ -20,8 +24,10 @@
      "id": "2"
     },
     {
-     "name": "THAILAND TRAVEL [BANGKOK - PATTAYA] (CORAL ATOLL - NONG NOOCH GARDEN - BAIYOKE SKY)",
+     "name": "THAILAND TRAVEL [BANGKOK - PATTAYA]",
+     "description": "Visit the land of Thai smiles with the Golden Pagoda, the sacred Wat Yanawa boat pagoda, admire the panoramic beauty of Bangkok and enjoy buffet at Baiyoke Sky tower - one of the tallest buildings in Bangkok.",
      "thumbnail": "https://media.travel.com.vn/destination/tf_220826052337_808950.jpg",
+     "banner": "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/06/Places-to-Visit-in-Thailand-to-Make-Your-Foreign-Trip-Happening.jpg?fit=2137%2C1350&ssl=1",
      "time": "5 days 4 nights",
      "vehicle": "Vietnam National Airlines",
      "departurePlace": "Ho Chi Minh City",
@@ -31,7 +37,9 @@
     },
     {
      "name": "EUROPE TRAVEL [FRANCE - SWITZERLAND - ITALY]",
+     "description": "Located in the continent of Europe, France, Italy and Switzerland are the most-sought-after tour destinations in the world, famous for their breathtaking sceneries and towering structures. There is nothing that can keep one from getting bedazzled by the beauty of these countries.",
      "thumbnail": "https://media.travel.com.vn/destination/tf_220427104341_021872.jpg",
+     "banner": "https://cdn.britannica.com/65/162465-050-9CDA9BC9/Alps-Switzerland.jpg",
      "time": "11 days 10 nights",
      "vehicle": "Vietnam National Airlines",
      "departurePlace": "Ho Chi Minh City",
@@ -41,7 +49,9 @@
     },
     {
      "name": "PHONG NHA CAVE - HUE - DA NANG - HOI AN - BA NA - GOLDEN BRIDGE",
+     "description": "Phong Nha Cave Tour from Hue to experience One of the Best Caves in Phong Nha Ke Bang National Park of Vietnam in 1 Full Day Trip with Affordable Price.",
      "thumbnail": "https://media.travel.com.vn/destination/tf_220222114340_614496.jpg",
+     "banner": "https://tourdanangcity.vn/wp-content/uploads/2021/04/phong-nha-4-1.jpg",
      "time": "5 days 4 nights",
      "vehicle": "Vietnam Airlines",
      "departurePlace": "Ho Chi Minh City",
@@ -51,7 +61,9 @@
     },
     {
      "name": "HANOI - SAPA - FANSIPAN - HA LONG",
+     "description": "Fansipan tour is designed for travelers who want to save the time while visiting the most interesting attractions in Sapa, and challenging the Fansipan peak - the roof of Indochina.",
      "thumbnail": "https://media.travel.com.vn/destination/tf_221207045649_874164.jpg",
+     "banner": "https://static-images.vnncdn.net/files/publish/2022/10/30/sapa-25vn-4-72.jpg",
      "time": "5 days 4 nights",
      "vehicle": "Vietnam Airlines",
      "departurePlace": "Ho Chi Minh City",

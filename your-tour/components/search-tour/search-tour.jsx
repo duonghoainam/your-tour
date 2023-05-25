@@ -6,9 +6,9 @@ export default function SearchTour({setListTourSearch}) {
    const router = useRouter();
 
    function handleChange(event) {
-      router.push({
-         pathname: '/tour',
-     })
+   //    router.push({
+   //       pathname: '/tour',
+   //   })
       setListTourSearch(event.target.value);
    }
    return (

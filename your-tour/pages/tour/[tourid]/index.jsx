@@ -12,7 +12,7 @@ import SomeTour from '@components/search-tour/some-tour';
 import Link from 'next/link';
 import IconHexagonSmall from '@components/icons/ic-hexagon-small';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import mockApiIoInstance from 'config/mockapi-io';
 
 const TourDetail = () => {
    const router = useRouter();
@@ -21,17 +21,13 @@ const TourDetail = () => {
 
    useEffect(() => { 
       async function fetchData() {
-         const TourApi = await axios.get(`https://travel-website-backend.up.railway.app/api/tour-packages/${tourid}`,{
+         const res = await mockApiIoInstance.get(`/tours/${tourid}`,{
          });
-         console.log("Tour", TourApi)
-         setTour(TourApi.data.tourPackage)
+         const data = res.data
+         console.log("Tour", data)
+         setTour(data)
          const banner = document.querySelector(".tour-banner__container")
-         console.log(banner)
-         console.log(banner.style.background)
-         console.log(banner.style.backgroundImage)
-         banner.style.backgroundImage = `url(${TourApi.data.tourPackage.thumbnail})`
-         // banner.style.backgroundImage='unset'
-         console.log(TourApi.data.tourPackage.thumbnail);
+         banner.style.backgroundImage = `url(${data.banner})`
        }
        fetchData();      
    }, [tourid]);
@@ -85,12 +81,12 @@ const TourDetail = () => {
             </div>
             <div className="tour-info">
                <div className='tour-row'>
-                  <div className="blog-detail-text">Time:<b> {tour?.time}</b></div>
-                  <div className="blog-detail-text">Vehicle:<b>{tour?.vehicle}</b></div>
+                  <div className="blog-detail-text">Time: <b> {tour?.time}</b></div>
+                  <div className="blog-detail-text">Vehicle: <b>{tour?.vehicle}</b></div>
                </div>
                <div className='tour-row'>
-                  <div className="blog-detail-text">Departure Place:<b> {tour?.departurePlace}</b></div>
-                  <div className="blog-detail-text">Destination:<b>{tour?.name}</b></div>
+                  <div className="blog-detail-text">Departure Place: <b> {tour?.departurePlace}</b></div>
+                  <div className="blog-detail-text">Destination: <b>{tour?.name}</b></div>
                </div>
                <div className='tour-bill-table'>
                   <div className='row tour-table-header'>
@@ -203,7 +199,7 @@ const TourDetail = () => {
 
             
             <ScrollToTop></ScrollToTop>
-            <h2 style={{margin:20}}>more tour</h2>
+            <h2 style={{margin:20}}>More tours</h2>
             <SomeTour/>
     </>
    );

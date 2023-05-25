@@ -103,7 +103,7 @@ const Tours = () => {
                               time={item.time}
                               vehicle={item.vehicle}
                               fromTo={`${item.departurePlace} -> ${item.destination}`}
-                              schedule="Enjoy the specialty of Bali paradise with beautiful poetic scenery, smooth sand, fresh air, relax watching the sunset on the sea. Explore sacred ancient temples like Tanah Lot temple, Uluwatu . temple,..."
+                              schedule={item.description}
                            />
                         ))}
                      </div>
