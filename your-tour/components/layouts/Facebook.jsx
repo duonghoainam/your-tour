@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export function init() {
     var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "107648742190459");
+    chatbox.setAttribute("page_id", "106563109132332");
     chatbox.setAttribute("attribution", "biz_inbox");
 
     window.fbAsyncInit = function() {
